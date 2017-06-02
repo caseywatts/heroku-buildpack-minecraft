@@ -4,3 +4,11 @@
     <br />
   <% end %>
 <% end %>
+
+<h3>Full Ngrok Log</h3>
+<% open('ngrok.log') do |f| %>
+  <% f.lines.each do |line| %>
+    <%= line %>
+    <br />
+  <% end %>
+<% end %>
